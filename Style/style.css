@@ -1,5 +1,30 @@
+/* .container {
+  flex-direction: row;
+}
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+} */
 /* -----------> HEAD <----------- */
+body {
+  width: auto;
+  margin: 4rem 3rem 3rem 3rem;
+  padding: 0;
+}
 
+button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-size: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
 .center {
   margin-top: 1rem;
   display: flex;
@@ -7,22 +32,29 @@
   align-items: center;
   flex-direction: row;
   gap: 5rem;
-  /* justify-content: space-between; */
 }
+/* =============================================> List */
 .center a {
   text-decoration: none;
   font-family: sans-serif;
   font-size: 15px;
   color: #f09819;
   font-weight: bold;
+  transition: 0.2s;
 }
-
 .center a:hover {
-  color: #ff5858;
+  padding: 0.23rem 1rem;
+  border-radius: 5px;
+  background: #e0e0e0;
+  box-shadow: -5px -5px 10px #bababa, 5px 5px 10px #ffffff;
 }
-/* =========================================> Profile-top */
+/* ====================================================> Profile-top */
 .profile {
-  width: 200px;
+  margin: 2rem 0 2rem 0;
+  width: 150px;
+  border-radius: 85px;
+  background: #e0e0e0;
+  box-shadow: 10px 10px 20px #b3b3b3, -10px -10px 20px #ffffff;
 }
 .center-col {
   display: flex;
@@ -31,9 +63,16 @@
   flex-direction: column;
 }
 .center-col h2 {
-  margin-top: -20px;
+  padding: 0 15px 0 15px;
   font-family: KonKhmerSURIN;
   color: #29323c;
+  border-radius: 38px;
+  background: linear-gradient(225deg, #ff585890, #f096197c);
+  box-shadow: -23px 23px 57px #bababa, 23px -23px 57px #ffffff;
+}
+.center-col h2:hover {
+  color: #ffffff;
+  cursor: pointer;
 }
 .P-head {
   margin-top: -20px;
@@ -43,21 +82,23 @@
   text-align: justify;
   color: #29323cb6;
 }
-/* ===================================================> Center-col */
-.center-col p .Chhaya {
+/* ===========================================================> Center-col */
+#h1-size{
+font-size: 20px;
+width: 70%;
+}
+.center-col h1 .Chhaya {
   font-family: KonKhmerSURIN;
   color: #ff5858;
 }
-.center-col p .Chhaya:hover {
-  font-family: KonKhmerSURIN;
+.center-col h1 .Chhaya:hover {
   color: #f09819;
 }
-.center-col p .bbu {
+.center-col h1 .bbu {
   font-family: KonKhmerSURIN;
   color: #ff5858;
 }
-.center-col p .bbu:hover {
-  font-family: KonKhmerSURIN;
+.center-col h1 .bbu:hover {
   color: #4facfe;
 }
 
@@ -68,26 +109,31 @@
   align-items: center;
   flex-direction: row;
 }
-img {
-  width: 230px;
+.profile-body img {
+  margin: 30px 0px 30px 0;
+  width: 150px;
+  border-radius: 50%;
+  background: #e0e0e0;
+  box-shadow: -19px 19px 38px #bababa, 19px -19px 38px #ffffff;
+  flex-direction: row;
+}
+
+.profile-body img:hover {
+  cursor: pointer;
+  background: #ff5858a5;
 }
 .gap {
   gap: 5rem;
 }
 .P-body {
-  margin-top: -20px;
+  margin-top: 20px;
   font-family: KonKhmerSURIN;
   font-size: 1rem;
   width: 70%;
   text-align: justify;
   color: #29323cb6;
 }
-.underline-h1 {
-  text-decoration: underline;
-}
-#banner-foot {
-  width: 66rem;
-}
+
 .A-center {
   margin-top: 2rem;
   display: flex;
@@ -100,4 +146,22 @@ img {
   width: 70%;
   text-align: justify;
   color: #4facfe;
+}
+@media (max-width: 600px),(min-width: 500px) {
+  .profile-body{
+    flex-direction: column;
+  }
+  #h1-size b{
+    font-size: 1rem;
+    text-align: center;
+  }
+  #GOOD{
+    font-size: 1.2rem;;
+  }
+  .center-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }

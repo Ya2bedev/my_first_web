@@ -3,7 +3,7 @@ $(document).ready(function () {
   const hour = date.getHours();
   let message = " ";
   if (hour <= 12) {
-    message = "Good Moring";
+    message = "Good Morning";
   }
   if (hour > 12) {
     message = "Good Afternoon";
@@ -11,7 +11,10 @@ $(document).ready(function () {
   if (hour > 17) {
     message = "Good Evening";
   }
+  if (hour > 21) {
+    message = "Good Night";
+  }
   $("#GOOD")
     .empty()
-    .append( " '' " + message + " '' " + " From CHHAYA");
+    .append(" '' " + message + " '' " + " From CHHAYA");
 });
