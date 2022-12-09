@@ -7,26 +7,9 @@
   }
 } */
 /* -----------> HEAD <----------- */
-body {
-  width: auto;
-  margin: 4rem 3rem 3rem 3rem;
-  padding: 0;
-}
 
-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 10px;
-  border: none;
-  outline: none;
-  font-size: 10px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
 .center {
-  margin-top: 1rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,6 +40,7 @@ button {
   box-shadow: 10px 10px 20px #b3b3b3, -10px -10px 20px #ffffff;
 }
 .center-col {
+  padding-bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,21 +55,22 @@ button {
   box-shadow: -23px 23px 57px #bababa, 23px -23px 57px #ffffff;
 }
 .center-col h2:hover {
-  color: #ffffff;
+  color: #f09819;
   cursor: pointer;
 }
 .P-head {
   margin-top: -20px;
   font-family: KonKhmerSURIN;
   font-size: 1rem;
-  width: 70%;
+  width: 85%;
   text-align: justify;
   color: #29323cb6;
 }
 /* ===========================================================> Center-col */
-#h1-size{
-font-size: 20px;
-width: 70%;
+#h1-size {
+  text-align: center;
+  font-size: 20px;
+  width: 85%;
 }
 .center-col h1 .Chhaya {
   font-family: KonKhmerSURIN;
@@ -110,26 +95,23 @@ width: 70%;
   flex-direction: row;
 }
 .profile-body img {
-  margin: 30px 0px 30px 0;
+  margin: 1rem 5rem 1rem 5rem;
   width: 150px;
   border-radius: 50%;
   background: #e0e0e0;
   box-shadow: -19px 19px 38px #bababa, 19px -19px 38px #ffffff;
   flex-direction: row;
+  align-items: center;
 }
 
 .profile-body img:hover {
   cursor: pointer;
   background: #ff5858a5;
 }
-.gap {
-  gap: 5rem;
-}
 .P-body {
-  margin-top: 20px;
   font-family: KonKhmerSURIN;
   font-size: 1rem;
-  width: 70%;
+  width: 85%;
   text-align: justify;
   color: #29323cb6;
 }
@@ -147,18 +129,18 @@ width: 70%;
   text-align: justify;
   color: #4facfe;
 }
-@media (max-width: 600px){
-  .profile-body{
+@media (max-width: 600px) {
+  .profile-body {
     flex-direction: column;
   }
-  #h1-size b{
+  #h1-size b {
     font-size: 1rem;
     text-align: center;
   }
-  #GOOD{
-    font-size: 1.2rem;;
+  #GOOD {
+    font-size: 1.2rem;
   }
-  .center-col{
+  .center-col {
     display: flex;
     justify-content: center;
     align-items: center;
