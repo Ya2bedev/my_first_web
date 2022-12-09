@@ -1,0 +1,103 @@
+/* -----------> HEAD <----------- */
+
+.center {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5rem;
+  /* justify-content: space-between; */
+}
+.center a {
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #f09819;
+  font-weight: bold;
+}
+
+.center a:hover {
+  color: #ff5858;
+}
+/* =========================================> Profile-top */
+.profile {
+  width: 200px;
+}
+.center-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.center-col h2 {
+  margin-top: -20px;
+  font-family: KonKhmerSURIN;
+  color: #29323c;
+}
+.P-head {
+  margin-top: -20px;
+  font-family: KonKhmerSURIN;
+  font-size: 1rem;
+  width: 70%;
+  text-align: justify;
+  color: #29323cb6;
+}
+/* ===================================================> Center-col */
+.center-col p .Chhaya {
+  font-family: KonKhmerSURIN;
+  color: #ff5858;
+}
+.center-col p .Chhaya:hover {
+  font-family: KonKhmerSURIN;
+  color: #f09819;
+}
+.center-col p .bbu {
+  font-family: KonKhmerSURIN;
+  color: #ff5858;
+}
+.center-col p .bbu:hover {
+  font-family: KonKhmerSURIN;
+  color: #4facfe;
+}
+
+/* ==========================================================> Profile-Body */
+.profile-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+img {
+  width: 230px;
+}
+.gap {
+  gap: 5rem;
+}
+.P-body {
+  margin-top: -20px;
+  font-family: KonKhmerSURIN;
+  font-size: 1rem;
+  width: 70%;
+  text-align: justify;
+  color: #29323cb6;
+}
+.underline-h1 {
+  text-decoration: underline;
+}
+#banner-foot {
+  width: 66rem;
+}
+.A-center {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.A-p-h {
+  font-family: KonKhmerSURIN;
+  font-size: 1rem;
+  width: 70%;
+  text-align: justify;
+  color: #4facfe;
+}
